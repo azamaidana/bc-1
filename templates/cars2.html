@@ -1,0 +1,14 @@
+<a href="/">Главная | </a>
+<a href="orders">Заказы | </a>
+<a href="cars">Машины |</a>
+<a href="clients">Клиенты</a>
+
+<h2>Список машин</h2>
+{% for car in cars %}
+    <div>
+        <a href="/car/{{car.id}}">
+            {{car.brand}}
+        </a>
+
+    </div>
+{% endfor %}
